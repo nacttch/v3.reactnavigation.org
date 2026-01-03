@@ -12,5 +12,33 @@
   <url>
     <loc>https://v3.reactnavigation.org/huh/video/</loc>
   </url>
+  
+  <url>
+    <loc>https://v3.reactnavigation.org/huh/files/</loc>
+  </url>
+  
+  <url>
+    <loc>https://v3.reactnavigation.org/huh/fiels/folder_01/</loc>
+  </url>
 
+  <url>
+    <loc>https://v3.reactnavigation.org/huh/fiels/folder_02/</loc>
+  </url>
+  
+  <url>
+    <loc>https://v3.reactnavigation.org/huh/fiels/folder_03/</loc>
+  </url>
+  
+  <url>
+    <loc>https://v3.reactnavigation.org/huh/fiels/folder_04/</loc>
+  </url>
+  
+  <url>
+    <loc>https://v3.reactnavigation.org/huh/fiels/folder_05/</loc>
+  </url>
+  
+  <url>
+    <loc>https://v3.reactnavigation.org/huh/fiels/folder_06/</loc>
+  </url>
+  
 </urlset>
