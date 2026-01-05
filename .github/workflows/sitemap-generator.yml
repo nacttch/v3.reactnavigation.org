@@ -1,21 +1,20 @@
 name: Generate Sitemaps Automatically
 
-# تحديد الأحداث التي تطلق السيرفر
 on:
   push:
     branches:
-      - main  # تأكد أن هذا هو اسم الفرع الرئيسي لديك (قد يكون master)
-  workflow_dispatch: # هذا السطر يسمح لك بتشغيل الأكشن يدوياً من صفحة Actions في GitHub
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # إعطاء صلاحية للأكشن للكتابة ورفع الملفات
+      contents: write
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4 # تحديث للإصدار الأخير
+      uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -25,12 +24,11 @@ jobs:
     - name: Run Sitemap Generator
       run: python generate_sitemaps.py
 
-    - name: Commit and Push Sitemaps
+    - name: Commit and Push Files
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        # إضافة ملفات السايت ماب فقط
-        git add sitemap*.xml
-        # المحاولة بالرفع فقط إذا كانت هناك تغييرات لتجنب الخطأ
-        git commit -m "Auto-generate sitemaps [skip ci]" || echo "No changes to commit"
+        # إضافة ملفات السايت ماب وملف الروبوتز
+        git add sitemap*.xml robots.txt
+        git commit -m "Auto-generate sitemaps and robots.txt [skip ci]" || echo "No changes to commit"
         git push
