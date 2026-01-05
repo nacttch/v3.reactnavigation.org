@@ -6,7 +6,7 @@ from xml.etree.ElementTree import Element, SubElement, tostring, ElementTree
 from datetime import datetime
 
 # --- الإعدادات ---
-BASE_URL = "https://yourdomain.com"  # استبدله برابط موقعك الحقيقي
+BASE_URL = "https://v3.reactnavigation.org"  # استبدله برابط موقعك الحقيقي
 LIMIT_PER_SITEMAP = 5000
 PUBLIC_DIR = "."  # المجلد الذي يحتوي على ملفات الموقع
 EXTENSIONS_TO_INCLUDE = ('.html', '.php')
