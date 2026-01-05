@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://v3.reactnavigation.org/sitemap.xml
+Sitemap: https://yourdomain.com/sitemap.xml
