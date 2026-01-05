@@ -4,7 +4,7 @@ from xml.etree.ElementTree import Element, SubElement, tostring, ElementTree
 from datetime import datetime
 
 # --- Configuration ---
-BASE_URL = "https://yourdomain.com"  # Replace with your actual domain
+BASE_URL = "https://v3.reactnavigation.org"  # Replace with your actual domain
 LIMIT_PER_SITEMAP = 5000
 PUBLIC_DIR = "."  # Directory containing your website files
 EXTENSIONS_TO_INCLUDE = ('.html', '.php')
